@@ -1,0 +1,116 @@
+/* -- GENERAL ----------------------------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/bg-body.png");
+  font-family: 'Raleway', sans-serif;
+}
+ol, ul {
+  margin: 0;
+  padding: 0;
+}
+/* -- HEADER -----------------------------------------------------------------*/
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+.main-header img{
+  border-radius: 50%;
+  border: 2px rgb(235, 235, 235) solid;
+  box-shadow: 0 0 5px rgb(20, 20, 20);
+  margin: 20px auto;
+  display: block;
+}
+.ion-navicon-round {
+  display: block;
+  text-align: center;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 15px;
+  padding: 15px;
+  width: 50px;
+  background-color: rgb(20, 20, 20);
+  color: rgb(235, 235, 235);
+  font-size: 1.2em
+}
+/* -- BARRA NAVEGACION -------------------------------------------------------*/
+.main-nav {
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 100%;
+}
+.main-nav ul {
+  display: none;
+}
+.main-nav li{
+  overflow: hidden;
+}
+.main-nav a{
+  display: block;
+  background-color: rgb(20, 20, 20);
+  color: rgb(235, 235, 235);
+  width: 100%;
+  padding: 20px;
+  margin-top: 1px;
+  font-size: 1.6em;
+  text-decoration: none;
+}
+.ion-navicon-round:hover {
+  display:block;
+}
+/* -- PRODUCTOS y BANNER -----------------------------------------------------*/
+.banner {
+  display: none;
+}
+.product img{
+  width: 100%;
+}
+.product a{
+  background-color: rgb(20, 20, 20);
+  color: rgb(235, 235, 235);
+  font-size: 1.2em;
+  padding: 15px 20px;
+  display: inline-block;
+  text-decoration: none;
+  margin: 15px 0;
+}
+/* -- FOOTER -----------------------------------------------------------------*/
+.main-footer  {
+  overflow: hidden;
+  border-radius: 15px 15px 0 0 ;
+}
+.main-footer a {
+  background-color: rgb(162, 0, 0);
+  color: rgb(235, 235, 235);
+  display: block;
+  width: 100%;
+  font-size: 1.6em;
+  text-align: center;
+  padding: 15px;
+  margin-top: 1px;
+}
+/* -- MEDIA QUERYS -----------------------------------------------------------*/
+@media (min-width:640px) {
+  .main-nav li {
+    float: left;
+    margin-right: 20px;
+  }
+  .main-nav a {
+    font-size: 1em;
+    padding: 8px;
+  }
+  .main-nav ul {
+    display: block;
+    margin: 0 auto;
+  }
+  .ion-navicon-round {
+    display:none;
+  }
+
+  .product {
+    float: left;
+  }
+}
